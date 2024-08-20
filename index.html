@@ -3,31 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outlet Details</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portal - GT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px auto;
+        }
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: #333;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            background-color: #444;
+        }
+        .menu-item-icon {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .menu-item-icon img {
+            width: 48px;
+            height: 48px;
+        }
+        .menu-item-text {
+            text-align: center;
+            font-size: 18px;
+        }
+        .notification-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: #f44336;
+            color: #fff;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Outlet Details</h1>
-    </header>
-    <main>
-        <table id="outlet-table">
-            <thead>
-                <tr>
-                    <th>Outlet ID</th>
-                    <th>Outlet Name</th>
-                    <th>Distribution Channel</th>
-                    <th>District</th>
-                    <th>City</th>
-                    <th>Phone Number</th>
-                    <th>Directions</th>
-                </tr>
-            </thead>
-            <tbody id="outlet-table-body">
-                <!-- Data will be inserted here -->
-            </tbody>
-        </table>
-    </main>
-    <script src="scripts.js"></script>
+    <div class="menu-container">
+        <a href="https://script.google.com/a/macros/efishery.com/s/AKfycbxc266atsokQ0a5iBJmmq07dm8RZ5RRwUsmI2cZ_jMer0H_VAuaQuLYAwgwsQlZ_tsK/exec" class="menu-item">
+            <div class="menu-item-icon">
+                <img src="https://cdn-icons-png.flaticon.com/128/3559/3559205.png" alt="Icon 1">
+            </div>
+            <div class="menu-item-text">Attendance</div>
+        </a>
+    </div>
 </body>
 </html>
